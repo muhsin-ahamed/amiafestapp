@@ -55553,27 +55553,29 @@ azz(a){var s,r=a.b,q=A.mv(A.mr(a.e)).bF(0,a.w),p=null
 try{p=B.aC.oh(0,q,null)}catch(s){p=null}if(r>=200&&r<300){if(p!=null&&t.f.b(p)&&J.lr(p,"data"))return J.ak(p,"data")
 return p}else throw A.c(A.b62(t.f.b(p)&&J.ak(p,"message")!=null?J.aR(J.ak(p,"message")):"HTTP Request failed with status "+r,r))},
 rP(a){return this.aEB(a)},
-aEB(a){var s=0,r=A.p(t.z),q,p=2,o=[],n=this,m,l,k,j,i,h
+aEB(a){var s=0,r=A.p(t.z),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f
 var $async$rP=A.q(function(b,c){if(b===1){o.push(c)
 s=p}for(;;)switch(s){case 0:p=4
 s=7
 return A.i(a.$0(),$async$rP)
 case 7:m=c
-j=n.azz(m)
-q=j
+h=n.azz(m)
+q=h
 s=1
 break
 p=2
 s=6
 break
 case 4:p=3
-h=o.pop()
-j=A.U(h)
-if(j instanceof A.zN)throw h
-else{l=j
+f=o.pop()
+h=A.U(f)
+if(h instanceof A.zN)throw f
+else{l=h
 k=J.aR(l)
-if(J.f2(k,"Failed to fetch")||J.f2(k,"ClientException")||J.f2(k,"SocketException"))throw A.c(A.b62("Failed to connect to backend at "+n.a+". Please verify Node.js server is running on port 3000.",0))
-throw A.c(A.b62(J.bnL(k,A.bi("^Exception:\\s*",!0,!1,!1),""),500))}s=6
+if(J.f2(k,"Failed to fetch")||J.f2(k,"ClientException")||J.f2(k,"SocketException")){h=n.a
+j=B.c.p(h,"localhost")||B.c.p(h,"127.0.0.1")
+i=j?"Please verify Node.js server is running locally.":"Please verify the backend server URL is reachable and CORS is configured."
+throw A.c(A.b62("Failed to connect to backend at "+h+". "+A.j(i),0))}throw A.c(A.b62(J.bnL(k,A.bi("^Exception:\\s*",!0,!1,!1),""),500))}s=6
 break
 case 3:s=2
 break
@@ -136161,7 +136163,7 @@ s($,"bJX","baI",()=>A.mQ(new A.b4u(),t.v0))
 s($,"bJP","b5L",()=>A.mQ(new A.b4q(),t.cE))
 s($,"bJD","bnc",()=>A.b7P(new A.b3K(),t.op))
 s($,"bJr","bna",()=>A.iy(new A.b3t(),t.aq))
-s($,"bJN","my",()=>new A.ag_(A.bo9("https://amia-fest-api.onrender.com")))
+s($,"bJN","my",()=>new A.ag_(A.bo9("https://festapp-all-data.onrender.com")))
 s($,"bDE","bjR",()=>{var q=new A.agl()
 q.uT($.b5u())
 return q})
